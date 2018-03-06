@@ -1,0 +1,2 @@
+blog： http://czmmiao.iteye.com/blog/1949225
+-r 参数为空是不运行xargs后面的脚本-t 运行时打印-n 一次运行的数量
