@@ -1,0 +1,5 @@
+1. ${ver:-version}2. ${ver:=version} 如果ver是空，赋值version，并且ver也是version3. ${ver:?version} 如果ver是空，报错，输出version到错误
+1. ${ver%version} 是否是以version结尾，如果是，就去掉右边最短匹配2. ${ver%%version} 是否是以version结尾，如果是，就去掉右边最长匹配3. ${ver#version} 是否是以version开头，如果是，就去掉左边最短匹配4. ${ver##version} 是否是以version开头，如果是，就去掉左边最长匹配
+${#ver} 字符长度，或者数组第一个元素的长度${#arr[@]}  数组长度
+echo {1..20}  输出1到20
+${HASH:0:12} 去HASH的0-12位 
