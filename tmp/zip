@@ -1,0 +1,4 @@
+zip：-d ： 删除指定文件-r ： 递归-q ： 不显示进程-S ： 包含系统和隐藏文件-X ： 不保存额外的文件属性
+zip -q -r html.zip /home/Blinux/htmlzip -q -r html.zip *
+unzip：-l ：显示压缩文件内的文件-v ：执行显示进程-n ：不覆盖原有文件-o ：不询问覆盖原有文件-q ：执行的时候不显示任何信息-d ：解压目录-x ：不解压.zip中的哪些文件
+unzip test.zipunzip -n test.zip -d /tmpunzip -v test.zipunzip -o test.zip -d tmp/
