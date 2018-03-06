@@ -1,0 +1,13 @@
+tar  命令
+-f ：后面跟机子取的文件名 *.tar-z ：打包后的压缩，  使用gzip-j ：打包后的压缩，  使用bzip2-v ：显示打包/解压的过程-c ：打包-t ：仅查看tar包的内容，不解压-x ：还原文件/解压-C ：解压的目录
+--exclude ： 忽略谋个文件
+tar -cvf log.tar log2012.log    仅打包，不压缩！ 
+tar -zcvf log.tar.gz log2012.log   打包后，以 gzip 压缩 
+tar -jcvf log.tar.bz2 log2012.log  打包后，以 bzip2 压缩 
+tar -ztvf  log.tar.gz  查看tar包中的文件tar -ztvf  log.tar.gz   log.log 仅解压log.log文件（部分解压）
+tar --exclude scf/service -zcvf scf.tar.gz scf/*   忽略scf/service文件
+简单使用：压　缩：tar -jcv -f filename.tar.bz2 要被压缩的文件或目录名称
+查　询：tar -jtv -f filename.tar.bz2
+解压缩：tar -jxv -f filename.tar.bz2 -C 欲解压缩的目录
+
+
