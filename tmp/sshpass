@@ -1,0 +1,7 @@
+1. 复制  sshpass -p '密码' scp -o StrictHostKeyChecking=no  源文件路径  用户@${IP}:文件放置位置例：sshpass -p 'Huawei@123' scp -o StrictHostKeyChecking=no   /home/BaseFspkg/minDeploy/install_service.sh    paas@${PAAS_OM_IP}:/var/paas/bootstrap/package2. 运行命令   sshpass  -p '密码' ssh -o o StrictHostKeyChecking=no 用户@${IP} 'shell  命令'例：sshpass -p 'Huawei@123'   ssh -o StrictHostKeyChecking=no   paas@${PAAS_OM_IP}   'cd /var/paas/bootstrap/package/;bash -x install_service.sh'  
+实例：sshpass -p 'root' ssh -o  StrictHostKeyChecking=no  root@100.109.194.101 'cd /var/paas/cfe-common/daily-build/;rm -rf INGRESS-*'
+sshpass -p 'root' scp -o  StrictHostKeyChecking=no root@100.109.194.101: /var/paas/cfe-common/daily-build/INGRESS-2.4.12.zip   
+报错： \302\240  ： 空格格式（windows）错误
+3. 示例：
+从其他机器拷贝到本地：
+sshpass -p root scp -o StrictHostKeyChecking=no  root@100.109.194.101:/var/paas/cfe-common/publish/ingress2.1/${LAYER_TYP}/INGRESS-$Version    /var/paas/bootstrap/package
